@@ -118,7 +118,7 @@
   </div>
 </section> -->
 
-<!-- Teaser -->
+<!-- Teaser (GPT) -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -135,7 +135,7 @@
   </div>
 </section>
 
-<!-- Abstract -->
+<!-- Abstract
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -156,10 +156,32 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section> -->
+
+<!-- Abstract (GPT) -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Virtual Try-On (VTON) is a highly active line of research, with increasing demand.  
+            It aims to replace a piece of garment in an image with one from another, while preserving person and garment characteristics as well as image fidelity. 
+            Current literature takes a supervised approach for the task, impairing generalization and imposing heavy computation. 
+            In this paper, we present a novel zero-shot training-free method for inpainting a clothing garment by reference. 
+            Our approach employs the prior of a diffusion model with no additional training, fully leveraging its native generalization capabilities. 
+            The method employs extended attention to transfer image information from reference to target images, overcoming two significant challenges. 
+            We first initially warp the reference garment over the target human using deep features, alleviating "texture sticking". 
+            We then leverage the extended attention mechanism with careful masking, eliminating leakage of reference background and unwanted influence. 
+            Through a user study, qualitative, and quantitative comparison to state-of-the-art approaches, we demonstrate superior image quality and garment preservation compared unseen clothing pieces or human figures.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
 
 
 <!-- Results Gallery -->
@@ -234,10 +256,9 @@
 </section>
 
 
-<!-- How does it work? -->
+<!-- How does it work?
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">How does it work?</h2>
@@ -254,9 +275,30 @@
   
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
-</section> 
+</section>  -->
+
+<!-- How does it work? -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">How does it work?</h2>
+      <!-- <div class="content has-text-justified"> -->
+      <figure class="image">
+        <img src="static/images/overview fig.jpg" alt="Overview of MaX4Zero method" style="max-width: 100%; height: auto;">
+        <figcaption>
+          <p>Overview of the proposed MaX4Zero method:</p> 
+          <ul style="text-align: left;">
+            <li><strong>Top:</strong> The Initial Registration stage, where the reference garment is warped to match the target person using extracted deep features from both images. The remaining gaps between the target garment and warped one are filled by the Fringe Assignment module. 
+            <li><strong>Bottom:</strong> The Consistent Inpainting stage, utilizing the Masked Extended Attention mechanism for transferring the reference fine-details through stroke-based inpainting.
+          </ul>
+        </figcaption>
+
+        </figure>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
 
   
 <section class="section">

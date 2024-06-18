@@ -126,7 +126,8 @@
         <div class="column is-centered has-text-centered">
           <img src="static/images/TEASER.PNG" alt="Preview of MaX4Zero Virtual Try-On Results"/>
           <h2 class="subtitle">
-            MaX4Zero performs Virtual Try-On in the wild (for unseen target images and garments) without any fine-tuning. Given a target image (top) and
+            <p></p>
+            <strong>MaX4Zero</strong> performs Virtual Try-On in the wild (for unseen target images and garments) without any fine-tuning. Given a target image (top) and
             a garment image (bottom), an image is generated using a diffusion-based prior that replaces the input garment with the one already worn in the target (right).
           </h2>
         </div>
@@ -306,6 +307,33 @@
   </div>
 </section>
 
+
+<!-- Comparisons -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Qualitative Comparisons</h2>
+        <div class="content">
+          <figure class="image">
+            <img src="static/images/qualy_fig.jpg" alt="Qualitative Comparisons" style="width: 100%; height: auto;">
+            <figcaption>
+              <p></p>
+              <!-- <p><strong> MaX4Zero method overview</strong></p> -->
+              <p><strong>Top: The Initial Registration stage</strong>, where the reference garment is warped to match the target person using extracted deep features from both images. The remaining gaps between the target garment and warped one are filled by the Fringe Assignment module.</p>
+              <p><strong>Bottom: The Consistent Inpainting stage</strong>, utilizing the Masked Extended Attention mechanism for transferring the reference fine-details through stroke-based inpainting.</p>
+              
+              <!-- <ul>
+                <li><strong>Top:</strong> The Initial Registration stage, where the reference garment is warped to match the target person using extracted deep features from both images. The remaining gaps between the target garment and warped one are filled by the Fringe Assignment module.</li>
+                <li><strong>Bottom:</strong> The Consistent Inpainting stage, utilizing the Masked Extended Attention mechanism for transferring the reference fine-details through stroke-based inpainting.</li>
+              </ul> -->
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   
 <section class="section">
